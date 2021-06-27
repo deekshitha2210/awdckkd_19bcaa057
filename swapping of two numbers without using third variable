@@ -1,0 +1,29 @@
+class B
+{
+public static void main(String args[])
+{
+System.out.println("Before Swapping");
+int x=39;
+int y=24;
+System.out.println("value of x:"+x);
+System.out.println("value of y:"+y);
+System.out.println("After Swapping");
+x=x+y;
+y=x-y;
+x=x-y;
+System.out.println("value of x:"+x);
+System.out.println("value of y:"+y);
+}
+}
+
+
+output:
+C:\Users\LENOVO>javac B.java
+
+C:\Users\LENOVO>java B
+Before Swapping
+value of x:39
+value of y:24
+After Swapping
+value of x:24
+value of y:39
