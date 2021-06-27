@@ -1,0 +1,15 @@
+class A
+       {
+	public static void main(String[] args) {
+		int a=24;
+		if((a&1)!=0)
+		System.out.println("odd");
+		else
+		System.out.println("even");
+	}
+}
+
+output:
+C:\Users\LENOVO>javac A.java
+C:\Users\LENOVO>java A
+even
