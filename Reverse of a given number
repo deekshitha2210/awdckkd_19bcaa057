@@ -1,0 +1,45 @@
+import java.util.Scanner;
+class Reverse
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+int m,n;
+System.out.println("enter two numbers");
+n=sc.nextInt();
+m=sc.nextInt();
+while(m>=n)
+{
+if(m%2==0)
+System.out.println(m+"");
+m--;
+}
+}
+}
+
+output:
+C:\Users\LENOVO>javac Reverse.java
+
+C:\Users\LENOVO>java Reverse
+enter two numbers
+2 40
+40
+38
+36
+34
+32
+30
+28
+26
+24
+22
+20
+18
+16
+14
+12
+10
+8
+6
+4
+2
