@@ -1,0 +1,28 @@
+class Digit
+{
+public static void main(String args[])
+{
+int n=567;
+int evendigit=0,odddigit=0;
+while(n>0)
+{
+int rem=n%10;
+if(rem%2==0)
+evendigit++;
+else
+odddigit++;
+n=n/10;
+}
+System.out.println("Even Digit=="+evendigit);
+System.out.println("Odd Digit=="+odddigit);
+}
+}
+
+output:
+C:\Users\LENOVO>javac Digit.java
+
+C:\Users\LENOVO>java Digit
+Even Digit==1
+Odd Digit==2
+
+
