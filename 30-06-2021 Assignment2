@@ -1,0 +1,22 @@
+public class Harshadnumber
+{
+static boolean checkHarshad(int n)
+{
+int sum=0;
+for(int temp=n;temp>0;temp/=10)
+sum+=temp%10;
+return(n%sum==0);
+}
+public static void main(String args[])
+{
+System.out.println(checkHarshad(22)?"Yes":"No");
+System.out.println(checkHarshad(156)?"Yes":"NO");
+}
+}
+
+output:
+C:\Users\LENOVO>javac Harshadnumber.java
+
+C:\Users\LENOVO>java Harshadnumber
+No
+Yes
