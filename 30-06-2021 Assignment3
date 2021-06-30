@@ -1,0 +1,29 @@
+import java.io.*;
+import java.util.*;
+
+public class Assign 
+{
+public static void main(String[] args)
+{   
+Scanner sc = new Scanner(System.in);      
+int n,pro=1,sum=0,r,re=0;
+System.out.print("Enter a number : ");
+n = sc.nextInt();
+while(n > 0)
+{
+r=n%10;            
+sum+=r;            
+pro *= r;            
+n = n/10;                    
+}          
+re = pro - sum;
+System.out.println(re);
+}
+}                
+        
+output:
+C:\Users\LENOVO>javac Assign.java
+
+C:\Users\LENOVO>java Assign
+Enter a number : 234
+15
