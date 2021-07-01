@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class Pattern2
+{
+public static void main(String args[])
+{
+int n,i,j,k=65;
+char ch;
+Scanner sc=new Scanner(System.in);
+n=sc.nextInt();
+for(i=1;i<=n;i++)
+{
+for(j=1;j<=i;j++)
+{
+System.out.print((char)k+" ");
+k++;
+}
+System.out.println();
+}
+}
+}
+
+output:
+C:\Users\LENOVO>javac Pattern2.java
+
+C:\Users\LENOVO>java Pattern2
+5
+A
+B C
+D E F
+G H I J
+K L M N O
