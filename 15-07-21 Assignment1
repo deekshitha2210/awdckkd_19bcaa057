@@ -1,0 +1,15 @@
+import java.util.*;
+class Arraylist
+{
+public static void main(String args[])
+{
+ArrayList<String>a1=new ArrayList<String>();
+ArrayList<String>a2=new ArrayList<String>();
+ArrayList<String>a3=new ArrayList<String>();
+a1.add("Homo");
+a2.add("Sapien");
+a3.addAll(a1);
+a3.addAll(a2);
+System.out.println("the array is="+a3);
+}
+}
