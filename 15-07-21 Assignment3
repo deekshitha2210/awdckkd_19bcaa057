@@ -1,0 +1,35 @@
+class Array {
+    public int[] sortArrayByParityII(int[] nums) {
+
+        int[] ans = new int[nums.length];
+        int[] odd = new int[nums.length/2];
+        int[] even = new int[nums.length/2];
+
+        int i = 0;
+        int j = 0;
+        int k = 0;
+
+        while (k < nums.length) {
+            if (nums[k]%2 == 0) {
+                even[j++] = nums[k++];
+            }
+            else {
+                odd[i++] = nums[k++];
+            }
+        }
+        i = 0;
+        j = 0;
+        k = 0;
+
+        while (k < ans.length) {
+            if (k%2 == 0) {
+                ans[k++] = even[j++];
+            }
+            else {
+                ans[k++] = odd[i++];
+            }
+        }
+
+        return ans;
+    }
+}
