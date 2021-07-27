@@ -10,9 +10,9 @@ deekshi[j]=1;
 
     }
     int result=0;
-    for(int i=2;i<rinda.length;i++)
+    for(int i=2;i<deekshi.length;i++)
     {
-        if(rinda[i]==0)
+        if(deekshi[i]==0)
         {
             result++;
         }
